@@ -17,7 +17,7 @@ public:
 protected:
 	
 	int Version;
-	//Éî¶ÈÍ¼ÀàĞÍ,ÔİÊ±ÎŞÓÃ
+	//æ·±åº¦å›¾ç±»å‹,æš‚æ—¶æ— ç”¨
 	int DepthmapType;
 	char DataTypeName[8];
 	int Width, Height;
