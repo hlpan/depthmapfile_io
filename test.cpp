@@ -3,15 +3,15 @@
 
 int main(int argc, char const *argv[])
 {
-	//Ê¹ÓÃËµÃ÷
-	//Éî¶ÈÍ¼£¬Êı¾İ¿ÉÒÔÊÇfloat»òdouble
+	//ä½¿ç”¨è¯´æ˜
+	//æ·±åº¦å›¾ï¼Œæ•°æ®å¯ä»¥æ˜¯floatæˆ–double
 	DepthmapFileIO<float> depthmap1;
-	//ÉèÖÃ½üÆ½ÃæºÍÔ¶Æ½Ãæ
+	//è®¾ç½®è¿‘å¹³é¢å’Œè¿œå¹³é¢
 
-	//ÉèÖÃÍ¼ÏñµÄ¿íºÍ¸ß
+	//è®¾ç½®å›¾åƒçš„å®½å’Œé«˜
 	depthmap1.SetWidthHeight(2,2);
 
-	//Éî¶ÈÊı¾İ£¬Êı×é
+	//æ·±åº¦æ•°æ®ï¼Œæ•°ç»„
 	std::vector<float> data;
 	data.push_back(1.0);
 	data.push_back(2.0);
@@ -19,10 +19,10 @@ int main(int argc, char const *argv[])
 	data.push_back(4.0);
 	depthmap1.SetData(data);
 
-	//½«Éî¶ÈÍ¼±£´æµ½ÎÄ¼ş
+	//å°†æ·±åº¦å›¾ä¿å­˜åˆ°æ–‡ä»¶
 	depthmap1.SaveTofile("11/d1.out");
 
-	//´ÓÎÄ¼ş¶ÁÈ¡Éî¶ÈÍ¼ĞÅÏ¢
+	//ä»æ–‡ä»¶è¯»å–æ·±åº¦å›¾ä¿¡æ¯
 	DepthmapFileIO<float> depthmap2;
 	depthmap2.LoadFromfile("d1.out");
 
